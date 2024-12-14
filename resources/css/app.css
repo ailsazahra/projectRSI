@@ -1,0 +1,162 @@
+/* Styling Input Fields */
+.appointment input[type="text"],
+.appointment input[type="date"] {
+    width: 1150px;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+.appointment{
+    background-color: #4A3C96;
+    color: white;
+    height: 330px;
+    width: 1250px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.appointment h1 {
+    font-size: 50px;
+    padding-top: 25px;
+    padding-left: 50px;
+}
+.appointment h2 {
+    color: #4A3C96;
+    font-size: 20px;
+    margin-top: 47px;
+    margin-bottom: 10px;
+}
+.criteria {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+
+}
+
+/* Label Styling */
+.appointment label {
+    font-weight: bold;
+    color: white;
+}
+
+/* Button Styling */
+.appointment button {
+    background-color: #ffffff;
+    color: #4A3C96;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+    margin-left: 1150px;
+}
+
+.appointment button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Results Section */
+#results {
+    display: flex;
+    flex-wrap: wrap; /* Ubah nowrap menjadi wrap untuk membuat tampilan bertingkat */
+    gap: 12px; /* Tambahkan jarak antar kartu */
+    justify-content: flex-start; /* Atur posisi kartu ke awal baris */
+    padding-top: 47px;
+
+}
+
+.no-appointments-message{
+    color: #FFFFFF;
+    padding: 100px 30px;
+    text-align: center;
+    
+}
+
+/* Styling untuk kartu hasil */
+.card-content {
+    flex: 0 0 calc(20% - 15px); /* Lebar kartu 20% dari container dengan jarak antar 15px */
+    max-width: 245px; /* Batas maksimal lebar kartu */
+    background-color: #483D89; /* Warna dasar ungu */
+    color: #FFFFFF; /* Teks putih */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header dalam kartu */
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-header svg {
+    height: 55px;
+}
+
+.user-icon {
+    margin-bottom: 10px;
+}
+.top{
+    background-color: #f6f1f4;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.card-header h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #483D89;
+}
+
+.card-header .expertise {
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #483D89;
+    padding: 3px 8px;
+    border-radius: 12px;
+}
+
+/* Konten kartu */
+.card-body p {
+    font-size: 14px;
+    margin: 3px 0;
+    color: #483D89;
+}
+
+/* Footer dalam kartu */
+.card-footer button {
+    margin-top: 7px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 200px;
+    color: #c82eac;
+    background-color: #ffe7f7;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-footer button:hover {
+    background-color: #f0ceee;
+
+}
+
+.card-footer button:disabled {
+    background-color: #9E9E9E;
+    cursor: not-allowed;
+}
